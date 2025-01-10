@@ -26,7 +26,8 @@ def simulate_mm1(arrival_rate, service_rate, num_simulations):
 
 def main():
     service_rate = 1.0  # mu
-    arrival_rates = np.linspace(0.3, 0.9, 7)
+    # arrival_rates = np.linspace(0.3, 0.9, 7)
+    arrival_rates = np.arange(0.3, 0.9, 0.02)
     num_simulations_per_point = 50
 
     simulation_data = {}
